@@ -7,6 +7,8 @@ import CustomNavbar from '../components/CustomNavbar'
 import VideoBanner from '../components/VideoBanner'
 import Catalouge from '../components/Catalouge'
 import Testimonials from '../components/Testimonials'
+import Specs from '../components/Specs'
+
 
 const product = () => {
   return (
@@ -16,6 +18,7 @@ const product = () => {
         <Banner/>
         <Catalouge/>
         <VideoBanner/>
+        <Specs/>
         <Testimonials/>
     </div>
     </div>
