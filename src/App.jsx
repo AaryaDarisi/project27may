@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Contact, Hero, Navbar, Works, StarsCanvas } from "./components";
 import LoginPage from "./product1";
-import product1 from "./product1";
+import ProductPage from "./pages/Product.jsx";
 import './index.css';
 import Defxv from "./components/Defxv";
 import Footer from "./components/Footer";
@@ -12,7 +12,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />} />
-        <Route path="/product1" element={<product1 />} />
+        <Route path="/products" element={<ProductPage />} />
       </Routes>
     </BrowserRouter>
   );

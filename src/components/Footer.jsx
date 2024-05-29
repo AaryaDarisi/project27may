@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef }  from 'react';
+import Typed from 'typed.js';
 // import './Footer.css'; // Assuming you have a CSS file for styling
 
 const Footer = () => {
+
+  const typedEl = useRef(null);
+
+  useEffect(() => {
+    const strings = ['#YouTube', '#Instagram', '#Twitter', '#LinkedIn'];
+    const colors = ['youtube', 'instagram', 'twitter', 'linkedin'];
+
+    const typed = new Typed(typedEl.current, {
+      strings: strings.map((string, index) => `<span class="${colors[index]}">${string}</span>`),
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <section className="access">
         <div className="footer-container text-black bg-white">
-          <h1>Join us on</h1>
+          <h1 className='h1'>Join us on</h1>
+          <p className="type"><span ref={typedEl}/></p>
           <div className="footer-socialmedia">
           <div className='footer-socialmedia-link'>
             <img src="https://img.icons8.com/wired/64/000000/youtube.png" alt="YouTube" />

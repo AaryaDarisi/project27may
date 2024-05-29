@@ -1,5 +1,6 @@
 import React from "react";
 import { SectionWrapper } from "../hoc";
+import { Link } from 'react-router-dom';
 
 const Defxv = () => {
   return (
@@ -11,7 +12,7 @@ const Defxv = () => {
           </h1>
         
         <div className="def-btn">
-        <button className="learn-more-btn ">Learn More</button>
+        <Link to="/products"><button className="learn-more-btn ">Learn More</button></Link>
         </div>
         </div>
       </div>

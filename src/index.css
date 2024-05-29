@@ -302,11 +302,12 @@
 .footer-container{
   justify-content: center;
   text-align: center;
+  font-size: 30px;
 }
-.footer-container h1{
+/* .footer-container h1{
   margin: 5%;
   padding-top: 5%;
-}
+} */
 .footer-socialmedia{
   display: flex;
   flex-direction: row;
@@ -331,6 +332,8 @@
   justify-content: right;
   height: 60%;
   width: 100vh;
+  position: absolute;
+  bottom: 25%;
   
   
 }
@@ -338,3 +341,34 @@
   background-color: #ffffff;
 }
 /* demooo */
+
+
+.type {
+  display: block;
+  position: static;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.youtube {
+  color: #ec2929;
+}
+
+.instagram {
+  color: #ff589e;
+}
+
+.twitter {
+  color: #ff8400;
+}
+
+.linkedin {
+  color: #00a5fe;
+}
+
+
+
