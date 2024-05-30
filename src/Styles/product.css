@@ -17,3 +17,9 @@
     background-color: #ebe8e8;
 }
 
+.table
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

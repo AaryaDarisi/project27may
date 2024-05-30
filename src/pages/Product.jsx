@@ -8,6 +8,7 @@ import VideoBanner from '../components/VideoBanner'
 import Catalouge from '../components/Catalouge'
 import Testimonials from '../components/Testimonials'
 import Specs from '../components/Specs'
+import Table from '../components/Table'
 
 
 const product = () => {
@@ -18,6 +19,7 @@ const product = () => {
         <Banner/>
         <Catalouge/>
         <VideoBanner/>
+        <Table/>
         <Specs/>
         <Testimonials/>
     </div>
